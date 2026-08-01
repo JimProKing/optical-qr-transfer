@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Optical QR Transfer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Optical QR Transfer</h1>
+      <p class="muted">
+        인터넷/블루투스로 파일을 보내는 게 아니라,<br />
+        <b>화면 QR ↔ 카메라</b>로 파일을 넘기는 연습용 PoC.
+      </p>
+      <div class="cards">
+        <a class="card" href="/send/">
+          <strong>보내기 (Send)</strong>
+          <span>파일 고르면 QR이 빠르게 바뀜. 노트북 화면이 편함.</span>
+        </a>
+        <a class="card" href="/receive/">
+          <strong>받기 (Receive)</strong>
+          <span>카메라로 저 QR을 비추면 조립. 폰이 편함.</span>
+        </a>
+      </div>
+      <ol class="steps">
+        <li><code>npm install</code> → <code>npm run dev</code></li>
+        <li>노트북: Send 페이지에서 파일 선택 (작은 파일 추천, 예: 50~200KB)</li>
+        <li>폰: 터미널에 나온 Network 주소로 Receive 접속 (HTTPS 경고 허용)</li>
+        <li>카메라 시작 후 노트북 화면을 비춤</li>
+      </ol>
+      <p class="muted small">
+        참고: decimen-optical-transfer 아이디어를 단순화한 학습용 버전.<br />
+        전송 구간은 빛만 씀. 페이지를 처음 받을 때는 네트워크가 필요할 수 있음.
+      </p>
+    </main>
+  </body>
+</html>

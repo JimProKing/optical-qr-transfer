@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Receive · Optical QR</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="nav"><a href="/">← 홈</a></div>
+      <h1>받기</h1>
+      <p class="muted">카메라를 켠 뒤, 보내는 화면의 QR에 맞춥니다. 손 떨면 인식률 떨어짐.</p>
+
+      <div class="panel">
+        <div class="row">
+          <button id="startCam" type="button">카메라 시작</button>
+          <button id="stopCam" type="button" class="secondary" disabled>중지</button>
+        </div>
+        <div class="bar"><i id="bar"></i></div>
+        <p id="progress" class="status">0 / ? 조각</p>
+        <p id="status" class="status">대기 중</p>
+        <p id="meta" class="meta"></p>
+        <a id="download" class="card" style="display: none; margin-top: 8px" download>
+          <strong>다운로드</strong>
+          <span id="dlName"></span>
+        </a>
+      </div>
+
+      <video id="video" playsinline muted autoplay></video>
+      <canvas id="work" style="display: none"></canvas>
+    </main>
+    <script type="module" src="/receive/main.js"></script>
+  </body>
+</html>

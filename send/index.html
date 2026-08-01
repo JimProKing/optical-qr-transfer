@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Send · Optical QR</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="nav"><a href="/">← 홈</a></div>
+      <h1>보내기</h1>
+      <p class="muted">파일을 고르면 QR이 돌아가며 조각을 보여 줍니다. 밝기 최대로.</p>
+
+      <div class="panel">
+        <label for="file">파일 (처음엔 작은 거 추천, 예: 100KB 이하 이미지)</label>
+        <input id="file" type="file" />
+
+        <label for="fps">속도 (프레임/초): <span id="fpsVal">8</span></label>
+        <input id="fps" type="range" min="3" max="15" value="8" />
+
+        <label for="chunk">조각 크기 (클수록 빠르지만 인식이 어려울 수 있음)</label>
+        <select id="chunk">
+          <option value="400">작게 (안정)</option>
+          <option value="600" selected>보통</option>
+          <option value="900">크게 (가까울 때)</option>
+        </select>
+
+        <div class="row">
+          <button id="start" type="button" disabled>전송 시작</button>
+          <button id="stop" type="button" class="secondary" disabled>중지</button>
+        </div>
+        <p id="status" class="status">파일을 선택하세요.</p>
+        <p id="meta" class="meta"></p>
+      </div>
+
+      <canvas id="qr" width="480" height="480"></canvas>
+    </main>
+    <script type="module" src="/send/main.js"></script>
+  </body>
+</html>

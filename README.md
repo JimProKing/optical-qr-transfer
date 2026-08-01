@@ -1,6 +1,6 @@
 # Optical QR Transfer
 
-화면 QR ↔ 카메라로 파일 넘기기 연습.
+빛과 카메라 만으로 (인터넷 사용 없이) 파일 전송 프로그램
 
 Wi‑Fi/BT로 파일을 보내는 게 아니라, 한쪽이 QR을 돌리고 다른 쪽이 카메라로 읽음.
 [decimen-optical-transfer](https://github.com/bashalarmistalt/decimen-optical-transfer/) 보고 단순하게 만들어 봄.

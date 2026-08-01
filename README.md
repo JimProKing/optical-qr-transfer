@@ -10,9 +10,7 @@ Wi‑Fi/BT로 파일을 보내는 게 아니라, 한쪽이 QR을 돌리고 다�
 
 ## 시연
 
-![시연 영상](media/demo.mp4)
-
-안 보이면 → [media/demo.mp4](media/demo.mp4) 눌러서 재생.
+https://github.com/JimProKing/optical-qr-transfer/raw/main/media/demo.mp4
 
 ---
 
@@ -27,11 +25,6 @@ npm run dev
 2. **폰** 같은 Wi‑Fi/핫스팟에서 `https://(노트북IP):5173/receive/`
 3. HTTPS 경고 뜨면 고급 → 계속 방문
 4. 폰 카메라 켠 다음 노트북 QR 비추기
-
-처음엔 100KB 이하 파일이 편함. 화면 밝기 최대, 손 고정.
-
-아이폰 핫스팟이면 노트북 IP가 `172.20.10.x` 인 경우 많음.  
-`ipconfig` 에서 **Wi-Fi IPv4** 보면 됨. (WSL `172.29.x` 는 폰에서 안 씀)
 
 ---
 

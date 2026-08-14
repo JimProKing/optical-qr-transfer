@@ -10,7 +10,9 @@ Wi‑Fi/BT로 파일을 보내는 게 아니라, 한쪽이 QR을 돌리고 다�
 
 ## 시연
 
-https://github.com/JimProKing/optical-qr-transfer/raw/main/media/demo.mp4
+![Optical QR Transfer 시연](media/demo.gif)
+
+[X에서 보기](https://x.com/youngchanl6152/status/2083451192345272745)
 
 ---
 
@@ -34,7 +36,7 @@ npm run dev
 send/      QR 송출
 receive/   카메라 수신
 shared/    META|… / DATA|… 포맷
-media/     시연 영상
+media/     시연 GIF
 ```
 
 ## 한계
